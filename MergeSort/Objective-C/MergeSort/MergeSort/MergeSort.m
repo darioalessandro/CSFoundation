@@ -15,13 +15,8 @@
     if(a.count < 2) {
         return a;
     } else {
-        NSRange chunkARange;
-        chunkARange.location = 0;
-        chunkARange.length = [a count] / 2;
-        
-        NSRange chunkBRange;
-        chunkBRange.location = chunkARange.length;
-        chunkBRange.length = a.count - chunkBRange.location;
+        NSRange chunkARange = NSMakeRange(0, a.count/2);
+        NSRange chunkBRange = NSMakeRange(chunkARange.length, a.count - chunkARange.length);
         
         NSArray * chunkA = [self sort:[a subarrayWithRange:chunkARange]];
         NSArray * chunkB = [self sort:[a subarrayWithRange:chunkBRange]];
