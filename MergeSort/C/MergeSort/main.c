@@ -18,19 +18,14 @@ int * mergeChunks(int * chunka, int * chunkb, unsigned long chunkaSize, unsigned
     int bPtr = 0;
     
     for(int k = 0; k < sortedArraySize ; k++){
-        if(aPtr >= chunkaSize) {
-            sortedArray[k] = chunkb[bPtr];
-            bPtr++;
-        }else if(bPtr >= chunkbSize){
-            sortedArray[k] = chunka[aPtr];
-            aPtr++;
-        }else if(chunka[aPtr] < chunkb[bPtr]){
-            sortedArray[k] = chunka[aPtr];
-            aPtr++;
-        }else {
-            sortedArray[k] = chunkb[bPtr];
-            bPtr++;
-        }
+        if(aPtr >= chunkaSize)
+            sortedArray[k] = chunkb[bPtr++];
+        else if(bPtr >= chunkbSize)
+            sortedArray[k] = chunka[aPtr++];
+        else if(chunka[aPtr] < chunkb[bPtr])
+            sortedArray[k] = chunka[aPtr++];
+        else
+            sortedArray[k] = chunkb[bPtr++];
     }
     
     return sortedArray;
