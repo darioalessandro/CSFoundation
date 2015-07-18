@@ -37,18 +37,16 @@ LinkedList * deleteNodeIter(LinkedList * head, int data) {
     
     LinkedList * prev = head;
     LinkedList * center = head -> next;
-    LinkedList * next = (center) ? center -> next : NULL;
     
     while (center != NULL) {
         if (center -> data == data){
-            prev -> next = next;
+            prev -> next = center -> next;
             printf("deleting %i\n", center -> data);
             free(center);
             return head;
         } else {
             prev = prev -> next;
             center = center -> next;
-            next = (next) ? next -> next : NULL;
         }
     }
     
