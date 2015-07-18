@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>86C63FFB-B548-457F-A7DF-608402923B13</string>
+	<string>40135EF5-3FE4-4F95-8219-28DB3DB9DC18</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MergeSort</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
 		<string>https://github.com/darioalessandro/CSFoundation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MergeSort/C/MergeSort.xcodeproj/project.xcworkspace</string>
+	<string>MergeSort/Swift/MergeSort/MergeSort.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
-		<string>../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/darioalessandro/CSFoundation.git</string>

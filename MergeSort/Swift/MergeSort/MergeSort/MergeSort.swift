@@ -24,7 +24,7 @@ class MergeSort {
             } else if(bPtr >= chunkB.count) {
                 let t: AnyObject = chunkA[aPtr++]
                 sortedArray.addObject(t)
-            } else if((chunkA[aPtr] as! NSNumber).compare((chunkB[bPtr] as! NSNumber)).rawValue ==  -1) {
+            } else if((chunkA[aPtr] as! NSNumber).compare((chunkB[bPtr] as! NSNumber)).rawValue == -1) {
                 let t: AnyObject = chunkA[aPtr++]
                 sortedArray.addObject(t)
             } else {
