@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 #include "Queue.h"
+#include <stdlib.h>
+
 
 int main(int argc, const char * argv[]) {
     Queue * queue = queue_new();
@@ -18,5 +20,6 @@ int main(int argc, const char * argv[]) {
     queue_enqueue(queue, 123);
     queue_print(queue);
     queue_dequeueAll(queue);
+    free(queue);
     return 0;
 }

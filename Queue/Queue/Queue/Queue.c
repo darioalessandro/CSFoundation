@@ -21,7 +21,9 @@ int * queue_dequeue(Queue * queue) {
     if(first != NULL){
         queue -> first = first -> next;
         if(queue -> first == NULL) queue -> last = NULL;
-        return &first->data;
+        int * dataToReturn = &first -> data;
+        free(first);
+        return dataToReturn;
     } else {
         return NULL;
     }
@@ -32,7 +34,6 @@ void queue_dequeueAll(Queue * queue) {
     printf("**\n");
     while (val != NULL) {
         printf("dequeued %i\n", *val);
-        free(val);
         val = queue_dequeue(queue);
     }
     printf("**\n");
