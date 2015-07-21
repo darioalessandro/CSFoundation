@@ -28,7 +28,7 @@ Node * bst_delete(Node * node, int data);
 
 void bst_delete_helper(Node * parent, Node * node, int data);
 
-void bst_print_node_rec(Node * root, int level);
+void bst_print_node(Node * tree);
 
 bool bst_is_bst(Node * root);
 
