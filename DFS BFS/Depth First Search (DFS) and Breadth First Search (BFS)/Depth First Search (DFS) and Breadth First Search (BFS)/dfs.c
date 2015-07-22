@@ -51,11 +51,10 @@ LinkedList * dfs_rec(Node * root) {
         append(results, root);
     }
     
-    for (int i =0; i < root -> childrenSize; i++) {
-        Node * child = root -> children[i];
-        if(child -> visited == false)
-            appendList(results, dfs_rec(child));
-    }
+    for (int i =0; i < root -> childrenSize; i++)
+        if(root -> children[i] -> visited == false)
+            appendList(results, dfs_rec(root -> children[i]));
+    
     return results;
 }
 
