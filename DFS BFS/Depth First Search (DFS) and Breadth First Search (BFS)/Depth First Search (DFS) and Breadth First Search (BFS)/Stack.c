@@ -29,7 +29,7 @@ void * stack_pop(Stack * stack) {
 };
 
 void * stack_peek(Stack * stack) {
-    return stack -> top-> data;
+    return (stack -> top != NULL) ? stack -> top -> data : NULL;
 }
 
 void stack_popAll(Stack * stack) {

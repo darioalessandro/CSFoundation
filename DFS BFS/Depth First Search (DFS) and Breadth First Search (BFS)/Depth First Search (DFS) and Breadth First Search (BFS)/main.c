@@ -47,13 +47,13 @@ int main(int argc, const char * argv[]) {
     dfs_printNode(g);
     dfs_printNode(h);
     
-    LinkedList * result = dfs_explore(a);
+    LinkedList * result = dfs_rec(a);
     LinkedList * resultptr = (LinkedList *)result;
     
     while (resultptr != NULL) {
         Node * n = (Node *) resultptr -> data;
         if(n != NULL){
-            printf("found %c\n", n -> value);
+            printf("\nfound %c", n -> value);
         }
         resultptr = resultptr->next;
     }

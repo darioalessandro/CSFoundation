@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06126DA61B5FC0FB00135E4F /* bfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 06126DA41B5FC0FB00135E4F /* bfs.c */; };
 		063390831B5DC83F001B445E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 063390821B5DC83F001B445E /* main.c */; };
 		0633908B1B5DC998001B445E /* dfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 063390891B5DC998001B445E /* dfs.c */; };
 		063390901B5DEFE4001B445E /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 0633908C1B5DEFE4001B445E /* LinkedList.c */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06126DA41B5FC0FB00135E4F /* bfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bfs.c; sourceTree = "<group>"; };
+		06126DA51B5FC0FB00135E4F /* bfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bfs.h; sourceTree = "<group>"; };
 		0633907F1B5DC83F001B445E /* Depth First Search (DFS) and Breadth First Search (BFS) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Depth First Search (DFS) and Breadth First Search (BFS)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		063390821B5DC83F001B445E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		063390891B5DC998001B445E /* dfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dfs.c; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				063390821B5DC83F001B445E /* main.c */,
 				063390891B5DC998001B445E /* dfs.c */,
 				0633908A1B5DC998001B445E /* dfs.h */,
+				06126DA41B5FC0FB00135E4F /* bfs.c */,
+				06126DA51B5FC0FB00135E4F /* bfs.h */,
 			);
 			path = "Depth First Search (DFS) and Breadth First Search (BFS)";
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06126DA61B5FC0FB00135E4F /* bfs.c in Sources */,
 				063390831B5DC83F001B445E /* main.c in Sources */,
 				063390901B5DEFE4001B445E /* LinkedList.c in Sources */,
 				063390911B5DEFE4001B445E /* Stack.c in Sources */,
@@ -253,6 +259,7 @@
 				063390881B5DC83F001B445E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

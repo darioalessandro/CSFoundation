@@ -27,6 +27,8 @@ Node * dfs_addChildren(Node * parent, Node ** children, int size);
 
 void dfs_printNode(Node * node);
 
-LinkedList * dfs_explore(Node * node);
+LinkedList * dfs_rec(Node * root);
+
+LinkedList * dfs_iter(Node * root);
 
 #endif /* defined(__Depth_First_Search__DFS__and_Breadth_First_Search__BFS___dfs__) */
