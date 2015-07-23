@@ -12,6 +12,7 @@
 		0633908B1B5DC998001B445E /* dfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 063390891B5DC998001B445E /* dfs.c */; };
 		063390901B5DEFE4001B445E /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 0633908C1B5DEFE4001B445E /* LinkedList.c */; };
 		063390911B5DEFE4001B445E /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 0633908E1B5DEFE4001B445E /* Stack.c */; };
+		063D35181B60962400BC1757 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 063D35161B60962400BC1757 /* Queue.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		0633908D1B5DEFE4001B445E /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		0633908E1B5DEFE4001B445E /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 		0633908F1B5DEFE4001B445E /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		063D35161B60962400BC1757 /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
+		063D35171B60962400BC1757 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 		063390811B5DC83F001B445E /* Depth First Search (DFS) and Breadth First Search (BFS) */ = {
 			isa = PBXGroup;
 			children = (
+				063D35161B60962400BC1757 /* Queue.c */,
+				063D35171B60962400BC1757 /* Queue.h */,
 				0633908C1B5DEFE4001B445E /* LinkedList.c */,
 				0633908D1B5DEFE4001B445E /* LinkedList.h */,
 				0633908E1B5DEFE4001B445E /* Stack.c */,
@@ -141,6 +146,7 @@
 				06126DA61B5FC0FB00135E4F /* bfs.c in Sources */,
 				063390831B5DC83F001B445E /* main.c in Sources */,
 				063390901B5DEFE4001B445E /* LinkedList.c in Sources */,
+				063D35181B60962400BC1757 /* Queue.c in Sources */,
 				063390911B5DEFE4001B445E /* Stack.c in Sources */,
 				0633908B1B5DC998001B445E /* dfs.c in Sources */,
 			);

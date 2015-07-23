@@ -8,7 +8,9 @@
 
 #ifndef __Depth_First_Search__DFS__and_Breadth_First_Search__BFS___bfs__
 #define __Depth_First_Search__DFS__and_Breadth_First_Search__BFS___bfs__
+#include "dfs.h"
+#include "Queue.h"
 
-#include <stdio.h>
+LinkedList * bfs_explore_iter(Node * root);
 
 #endif /* defined(__Depth_First_Search__DFS__and_Breadth_First_Search__BFS___bfs__) */
