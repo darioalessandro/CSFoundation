@@ -33,7 +33,7 @@ object Main extends App {
         if (isSolution(node)) {
           solutions = node +: solutions
         } else if (node.depth < maxDepth) {
-          var newChildren = node.generateChildren.filter(n => node.isDifferent(n))
+          var newChildren = node.generateChildren.filter(node.isDifferent)
 
           newChildren = newChildren.map(_.setParent(Some(node))).sortBy{n => n.state.closenessToSolution}
 
