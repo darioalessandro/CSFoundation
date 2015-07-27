@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>748E4C20-E92F-42E5-9F88-B6035D92AE87</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>HashTable</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
 		<string>https://github.com/darioalessandro/CSFoundation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LinkedList/HashTable/HashTable.xcodeproj/project.xcworkspace</string>
+	<string>HashTable/HashTable/HashTable.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
