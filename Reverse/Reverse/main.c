@@ -21,17 +21,15 @@ void reverse(char * str) {
     
     while (startPtr < endPtr) {
         char tmp = *startPtr;
-        *startPtr = *endPtr;
-        *endPtr = tmp;
-        startPtr ++;
-        endPtr --;
+        *startPtr ++ = *endPtr;
+        *endPtr -- = tmp;
     }
     
 }
 
 int main(int argc, const char * argv[]) {
     char *s = malloc(sizeof(char) * 50);
-    strcpy(s, "NULL");
+    strcpy(s, "Get bored");
     reverse(s);
     printf("reversed: %s", s);
     free(s);
