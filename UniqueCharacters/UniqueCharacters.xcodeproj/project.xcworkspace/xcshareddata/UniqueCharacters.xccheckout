@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>407707BB-F3DB-493B-B6DB-CEA5A5B09231</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UniqueCharacters</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
+		<string>https://github.com/darioalessandro/CSFoundation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UniqueCharacters/UniqueCharacters.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/darioalessandro/CSFoundation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>363DAAE335D5523E2442E8B38EB1CEB553A4A656</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>363DAAE335D5523E2442E8B38EB1CEB553A4A656</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CSFoundation</string>
+		</dict>
+	</array>
+</dict>
+</plist>
