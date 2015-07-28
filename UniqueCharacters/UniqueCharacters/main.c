@@ -12,21 +12,19 @@
 #include "HashMap.h"
 
 bool hasUniqueCharacters(char * str) {
-    HashTable  * table = newHashMap(newHashTableNode("asdsd", 1), 1);;
-    char * ptr = str;
-    while (ptr && *ptr != '\0') {
-        char * temp = malloc(sizeof(char) * 2);
-        memcpy(temp, ptr, 1);
-        temp[1] = '\0';
+    HashTable  * table = newHashMap(NULL, 0);
+    char * ptr = &str[0];
+    while (ptr != NULL && *ptr != '\0') {
+        char temp[2] = {*ptr,'\0'};
         if(hashTableGet(table, temp) == HashTableNotFound){
             hashTableSet(table, temp, 1);
+            printHashTable(table);
             ptr++;
         }else{
             printHashTable(table);
             printf("string does not have unique characters, found at least two %c\n", *ptr);
             ptr = NULL;
         }
-        free(temp);
     }
     
     return false;
@@ -35,7 +33,7 @@ bool hasUniqueCharacters(char * str) {
 int main(int argc, const char * argv[]) {
     
     char * str = malloc(sizeof(char) * 50);
-    str = "Blind";
+    str = "metallica";
     
     printf("has unique characters %i", hasUniqueCharacters(str));
     
