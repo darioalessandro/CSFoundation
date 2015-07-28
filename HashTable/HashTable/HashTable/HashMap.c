@@ -9,7 +9,7 @@
 #include "HashMap.h"
 
 HashTableNode * newHashTableNode(char * key, int value) {
-    HashTableNode * newNode = malloc( sizeof(HashTableNode) );
+    HashTableNode * newNode = malloc( sizeof(HashTableNode) * 1 );
     newNode -> key = key;
     newNode -> value = value;
     return newNode;
@@ -28,9 +28,10 @@ int hashTableGet(HashTable * hashTable, char * key){
 void hashTableSet(HashTable * hashTable, HashKey key, int value) {
     int existingValue = hashTableGet(hashTable, key);
     if(existingValue == HashTableNotFound){
-        HashTableNode * nodes = hashTable -> nodes;
         int size = hashTable -> size;
-        nodes[size] = *newHashTableNode(key, value);
+        hashTable -> nodes[size].key = malloc(sizeof(char) * strlen(key));
+        strcpy(hashTable -> nodes[size].key, key);
+        hashTable -> nodes[size].value = value;
         hashTable -> size = size + 1;
     }else{
         printf("\nunable to set %s because it already exists", key);
@@ -39,7 +40,7 @@ void hashTableSet(HashTable * hashTable, HashKey key, int value) {
 
 HashTable * newHashMap(HashTableNode * nodes, size_t size) {
     HashTable * hashTable = malloc(sizeof(HashTable));
-    hashTable -> nodes = malloc(sizeof(HashTableNode));
+    hashTable -> nodes = malloc(sizeof(HashTableNode) * 50);
     hashTable -> size = 0;
     for (int i = 0; i < size; i++) {
         HashTableNode n = nodes[i];
