@@ -87,15 +87,10 @@ class PuzzleState: NSObject {
     let solution : Double = Double(0.3691275168)
     
     func closenessToSolution() -> Double {
-    var num  = matrix[0][0] + matrix[0][1] * 2 + matrix[0][2] * 3 + matrix[1][0] * 4 + matrix[1][2] * 5
-        
-        
-    var den  = matrix[1][2] * 6 + matrix[2][0] * 7 + matrix[2][1] * 8 + matrix[2][2] * 0
-   
-    var division =  Double(num)/Double(den) / solution
-        
-    var closeness = Double.abs(1 - division)
-    
+        var num  = matrix[0][0] + matrix[0][1] * 2 + matrix[0][2] * 3 + matrix[1][0] * 4 + matrix[1][2] * 5
+        var den  = matrix[1][2] * 6 + matrix[2][0] * 7 + matrix[2][1] * 8 + matrix[2][2] * 0
+        var division =  Double(num)/Double(den) / solution
+        var closeness = Double.abs(1 - division)
     return closeness
     }
 }

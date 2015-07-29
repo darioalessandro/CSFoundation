@@ -86,13 +86,13 @@
 			children = (
 				06F4E1BC1B68468D00188B12 /* AppDelegate.swift */,
 				06F4E1DC1B6852FD00188B12 /* EightPuzzle.swift */,
+				06F4E1DF1B68630300188B12 /* Node.swift */,
 				06F4E1BE1B68468D00188B12 /* ViewController.swift */,
 				06F4E1C01B68468D00188B12 /* Main.storyboard */,
 				06F4E1C31B68468D00188B12 /* Images.xcassets */,
 				06F4E1C51B68468D00188B12 /* LaunchScreen.xib */,
 				06F4E1BA1B68468D00188B12 /* Supporting Files */,
 				06F4E1DE1B685D0A00188B12 /* MyPlayground.playground */,
-				06F4E1DF1B68630300188B12 /* Node.swift */,
 				06F4E1E11B686B5F00188B12 /* ArrayExtensions.swift */,
 			);
 			path = 8PuzzleiOS;

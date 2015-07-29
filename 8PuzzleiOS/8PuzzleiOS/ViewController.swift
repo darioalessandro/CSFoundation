@@ -26,6 +26,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tile8: UIView!
     
+    @IBOutlet weak var tilenine: UIView!
+    
+    @IBOutlet weak var zerozero: UILabel!
+    
+    @IBOutlet weak var zeroone: UILabel!
+    
+    @IBOutlet weak var zerotwo: UILabel!
+    
+    @IBOutlet weak var onezero: UILabel!
+    
+    @IBOutlet weak var oneone: UILabel!
+    
+    @IBOutlet weak var onetwo: UILabel!
+    
+    @IBOutlet weak var twozero: UILabel!
+    
+    @IBOutlet weak var twoone: UILabel!
+    
+    @IBOutlet weak var twotwo: UILabel!
+    
     var eightPuzzle = PuzzleState.random()
     
     func translateView(view : UIView, pan : UIPanGestureRecognizer) {
@@ -44,17 +64,59 @@ class ViewController: UIViewController {
         eightPuzzle = PuzzleState.random()
     }
     
+    func renderState(state : PuzzleState) -> Void {
+        let labels : [[UILabel]] = [[zerozero, zeroone, zerotwo], [onezero, oneone,onetwo], [twozero, twoone, twotwo]]
+        let views : [[UIView]] = [[tile1, tile2, tile3], [tile4, tile5, tile6], [tile7,tile8, tilenine]]
+        
+        for i in 0 ... 2{
+            for j in 0 ... 2{
+                labels[i][j].text = String(state.matrix[i][j])
+                if state.matrix[i][j] == 0 {
+                   views[i][j].layer.opacity = 0
+                } else {
+                   views[i][j].layer.opacity = 1
+                }
+            }
+        }
+    }
+    
+    func renderStates(states : [PuzzleState]) -> Void {
+        
+        if !states.isEmpty {
+            renderState(states.first!)
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW,
+                Int64(1 * Double(NSEC_PER_SEC)))
+            
+            dispatch_after(delayTime, dispatch_get_main_queue()) {
+                self.renderStates(states.filter{$0 != states.first})
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         eightPuzzle.printMatrix()
         
-        println("found solution for easy puzzle \(self.solve(Node.easy(), maxDepth: 5, numberOfSolutions: 1))")
+        /*
+        var easy = self.solve(Node.easy(), maxDepth: 5, numberOfSolutions: 1)[0]
+        println("found solution for easy puzzle")
+        easy.printHistory() */
         
-       /* println("found solution for easy puzzle \(self.solve(Node.medium(), maxDepth: 20, numberOfSolutions: 1))")
+        var medium = self.solve(Node.medium(), maxDepth: 20, numberOfSolutions: 1)[0]
+        println("found solution for medium puzzle")
+        renderStates(medium.historyOfStates())
         
-        println("found solution for easy puzzle \(self.solve(Node.hard(), maxDepth: 25, numberOfSolutions: 1))")
+       
+        /*var hard = self.solve(Node.hard(), maxDepth: 25, numberOfSolutions: 1)[0]
+        println("found solution for hard puzzle")
+        hard.printHistory()
         
-        println("found solution for easy puzzle \(self.solve(Node.random(), maxDepth: 30, numberOfSolutions: 1 ))") */
+        var random = self.solve(Node.random(), maxDepth: 30, numberOfSolutions: 1 )[0]
+        println("found solution for random puzzle")
+        random.printHistory()
+        */
+        
     
     }
     
@@ -98,16 +160,14 @@ class ViewController: UIViewController {
                 } else if (node.depth < maxDepth) {
                     var newChildren : [Node] = node.generateChildren().filter{node.isDifferent($0)}
     
-                    newChildren.forEach{var n = $0 as Node; n.parent = node}
+                    newChildren.forEach{$0.parent = node}
                 
                     newChildren.sort{
                         $0.state!.closenessToSolution() < $1.state!.closenessToSolution()
                     }
     
                     if newChildren.isEmpty == false {
-                        for children in newChildren {
-                            solveHelper(children)
-                        }
+                        newChildren.forEach{solveHelper($0)}
                     }
                 }
             }
@@ -117,7 +177,6 @@ class ViewController: UIViewController {
         
         return solutions
     }
-
 
 }
 

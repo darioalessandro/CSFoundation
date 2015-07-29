@@ -113,6 +113,24 @@ class Node : NSObject {
         return children
     }
     
+    func historyOfStates() -> [PuzzleState] {
+        var states : [PuzzleState] = []
+        var n = self
+        states.append(n.state!)
+        while(n.parent != nil) {
+            n = n.parent!
+            states.append(n.state!)
+        }
+        return states.reverse()
+    }
+    
+    func printHistory() -> Void {
+        var states = historyOfStates()
+        for state in states {
+            state.printMatrix()
+        }
+    }
+    
     /*
     
     Possible children

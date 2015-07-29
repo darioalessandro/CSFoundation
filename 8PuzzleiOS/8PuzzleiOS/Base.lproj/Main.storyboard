@@ -115,6 +115,18 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.45783823779999999" green="0.38253146370000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-Gh-JX7">
+                                        <rect key="frame" x="254" y="254" width="115" height="115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDp-8D-Sho">
+                                                <rect key="frame" x="36" y="28" width="43" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.45783823779999999" green="0.38253146370000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.72362741712707179" green="0.72362741712707179" blue="0.72362741712707179" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -131,6 +143,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="oneone" destination="q1K-EY-fC1" id="gfc-cs-zFa"/>
+                        <outlet property="onetwo" destination="MJz-eO-Jgi" id="x3Q-Zr-45K"/>
+                        <outlet property="onezero" destination="8KJ-zV-PKT" id="iob-Fl-QNf"/>
                         <outlet property="tile1" destination="Mf2-Pg-NeZ" id="JH2-8t-xAF"/>
                         <outlet property="tile2" destination="WwX-tl-qaR" id="ZVK-UW-luh"/>
                         <outlet property="tile3" destination="BUM-Tw-l5m" id="gaL-0C-nlE"/>
@@ -139,6 +154,13 @@
                         <outlet property="tile6" destination="9fr-Mc-DDC" id="XGn-qr-mQM"/>
                         <outlet property="tile7" destination="j7N-Bj-rJa" id="Vo9-0z-7zn"/>
                         <outlet property="tile8" destination="tj4-sp-Xgl" id="kCl-rh-bWB"/>
+                        <outlet property="tilenine" destination="aAw-Gh-JX7" id="Tdb-HC-cMq"/>
+                        <outlet property="twoone" destination="bTC-dj-ihW" id="opE-DQ-6un"/>
+                        <outlet property="twotwo" destination="sDp-8D-Sho" id="9wF-2g-u3X"/>
+                        <outlet property="twozero" destination="VbR-FS-B9s" id="qsB-Sz-veT"/>
+                        <outlet property="zeroone" destination="yKF-l1-akR" id="Wq8-BQ-YDl"/>
+                        <outlet property="zerotwo" destination="fcJ-Fs-PwI" id="bqF-e0-nSM"/>
+                        <outlet property="zerozero" destination="4qU-d8-HuH" id="WLb-O9-VXE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
