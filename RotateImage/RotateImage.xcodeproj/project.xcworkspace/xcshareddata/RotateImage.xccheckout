@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>007978C6-AF66-44B2-9F11-A5769A8362FC</string>
+	<string>28CD7DB7-4010-4F72-A1A7-790489602334</string>
 	<key>IDESourceControlProjectName</key>
-	<string>8PuzzleiOS</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
 		<string>https://github.com/darioalessandro/CSFoundation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>8PuzzleiOS/8PuzzleiOS.xcodeproj</string>
+	<string>RotateImage/RotateImage.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
