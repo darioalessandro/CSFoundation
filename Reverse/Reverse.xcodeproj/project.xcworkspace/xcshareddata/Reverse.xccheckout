@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>216B0B68-6A50-4A4F-8B44-86B5C072CBBB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Reverse</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
 		<string>https://github.com/darioalessandro/CSFoundation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Reverse/Reverse.xcodeproj/project.xcworkspace</string>
+	<string>Reverse/Reverse.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
