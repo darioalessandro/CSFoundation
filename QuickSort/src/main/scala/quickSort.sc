@@ -31,3 +31,14 @@ sort(array)
 
 array
 
+def sortFunc(xs: Array[Int]): Array[Int] = {
+  if (xs.length <= 1) xs
+  else {
+    val pivot = xs(xs.length / 2)
+    Array.concat(
+      sortFunc(xs filter (pivot >)),
+      xs filter (pivot ==),
+      sortFunc(xs filter (pivot <)))
+} }
+
+sortFunc(Array(10,2))

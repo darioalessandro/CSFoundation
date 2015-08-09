@@ -29,8 +29,8 @@
       <file leaf-file-name="quickSort.sc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/quickSort.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62737644">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.76045626">
+              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -690,12 +690,12 @@
       <created>1439087014668</created>
       <option name="number" value="Default" />
       <updated>1439087014668</updated>
-      <workItem from="1439087019087" duration="681000" />
+      <workItem from="1439087019087" duration="916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="681000" />
+    <option name="totallyTimeSpent" value="916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -739,8 +739,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/quickSort.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62737644">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.76045626">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
           <folding />
         </state>
       </provider>
