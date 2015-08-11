@@ -13,17 +13,14 @@ NSNumber * weightForString(NSString * word){
     long weight = 0;
     const char * cRepresentation = [[word lowercaseString] UTF8String];
     for(int i = 0; i < word.length ; i++)
-        weight += cRepresentation[i];
-    
-    weight = weight + ('z' * word.length);
-    
+        weight += cRepresentation[i] ;
     return @(weight);
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        NSArray * unsortedAnagrams = @[@"zz", @"zw", @"noni", @"nino", @"opni", @"diet", @"its", @"once", @"edit", @"hug", @"sit", @"ugh", @"cone", @"tide"];
+        NSArray * unsortedAnagrams = @[@"aa", @"z"];
         
         NSMutableDictionary * weightTable = [NSMutableDictionary new];
         
