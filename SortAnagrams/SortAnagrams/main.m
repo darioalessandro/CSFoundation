@@ -9,24 +9,29 @@
 #import <Foundation/Foundation.h>
 
 NSNumber * weightForString(NSString * word){
-    int weight = 0;
-    const char * cRepresentation = [word UTF8String];
+
+    long weight = 0;
+    const char * cRepresentation = [[word lowercaseString] UTF8String];
     for(int i = 0; i < word.length ; i++)
         weight += cRepresentation[i];
+    
+    weight = weight + ('z' * word.length);
     
     return @(weight);
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSArray * unsortedAnagrams = @[@"diet", @"its", @"once", @"edit", @"hug", @"sit", @"ugh", @"cone", @"tide"];
+
+        NSArray * unsortedAnagrams = @[@"zz", @"zy", @"za", @"zzz", @"zzzz", @"z"];
+        
         NSMutableDictionary * weightTable = [NSMutableDictionary new];
         
         for(NSString * word in unsortedAnagrams)
             [weightTable setObject:weightForString(word) forKey:word];
         
         NSArray * allWeights = [[NSSet setWithArray:[weightTable allValues]] allObjects];
+        NSLog(@"weightTable %@", weightTable);
         
         for(NSNumber * n in allWeights)
             NSLog(@"%@", [weightTable allKeysForObject:n]);
