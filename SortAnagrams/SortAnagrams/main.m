@@ -23,7 +23,7 @@ NSNumber * weightForString(NSString * word){
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        NSArray * unsortedAnagrams = @[@"zz", @"zy", @"za", @"zzz", @"zzzz", @"z"];
+        NSArray * unsortedAnagrams = @[@"zz", @"zw", @"noni", @"nino", @"opni", @"diet", @"its", @"once", @"edit", @"hug", @"sit", @"ugh", @"cone", @"tide"];
         
         NSMutableDictionary * weightTable = [NSMutableDictionary new];
         
