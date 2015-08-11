@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
     long Aptr = sizeOfa - 1;
     long bptr = sizeOfb - 1;
     
-    for(long i = sizeOfA - 1 ; i>=0l ; i-- )
+    for(long i = sizeOfA - 1 ; i >= 0l ; i-- )
         if(bptr < 0)
             A[i] = A[Aptr--];
         else if(A[Aptr] <= b[bptr])
