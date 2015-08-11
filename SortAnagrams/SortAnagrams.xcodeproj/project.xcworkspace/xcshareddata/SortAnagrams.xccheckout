@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>80167F58-1C4C-4FD7-B618-006141CE8A8E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SortAnagrams</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
 		<string>https://github.com/darioalessandro/CSFoundation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SortAnagrams/SortAnagrams.xcodeproj/project.xcworkspace</string>
+	<string>SortAnagrams/SortAnagrams.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>

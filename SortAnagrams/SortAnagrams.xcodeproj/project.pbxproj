@@ -8,7 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		06000C141B799824008005CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06000C131B799824008005CB /* main.m */; };
+		0668BA611B7A4AE700832F09 /* SortAnagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668BA601B7A4AE700832F09 /* SortAnagramTests.m */; };
+		0668BA671B7A4B1300832F09 /* SortAnagrams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668BA661B7A4B1300832F09 /* SortAnagrams.m */; };
+		0668BA6A1B7A4D1400832F09 /* SortAnagrams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668BA661B7A4B1300832F09 /* SortAnagrams.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0668BA681B7A4D0100832F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06000C081B799824008005CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06000C0F1B799824008005CB;
+			remoteInfo = SortAnagrams;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		06000C0E1B799824008005CB /* CopyFiles */ = {
@@ -25,10 +38,22 @@
 /* Begin PBXFileReference section */
 		06000C101B799824008005CB /* SortAnagrams */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortAnagrams; sourceTree = BUILT_PRODUCTS_DIR; };
 		06000C131B799824008005CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0668BA5C1B7A4AE700832F09 /* SortAnagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortAnagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0668BA5F1B7A4AE700832F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0668BA601B7A4AE700832F09 /* SortAnagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortAnagramTests.m; sourceTree = "<group>"; };
+		0668BA651B7A4B1300832F09 /* SortAnagrams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortAnagrams.h; sourceTree = "<group>"; };
+		0668BA661B7A4B1300832F09 /* SortAnagrams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortAnagrams.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		06000C0D1B799824008005CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0668BA591B7A4AE700832F09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				06000C121B799824008005CB /* SortAnagrams */,
+				0668BA5D1B7A4AE700832F09 /* SortAnagramTests */,
 				06000C111B799824008005CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				06000C101B799824008005CB /* SortAnagrams */,
+				0668BA5C1B7A4AE700832F09 /* SortAnagramTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +85,27 @@
 			isa = PBXGroup;
 			children = (
 				06000C131B799824008005CB /* main.m */,
+				0668BA651B7A4B1300832F09 /* SortAnagrams.h */,
+				0668BA661B7A4B1300832F09 /* SortAnagrams.m */,
 			);
 			path = SortAnagrams;
+			sourceTree = "<group>";
+		};
+		0668BA5D1B7A4AE700832F09 /* SortAnagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				0668BA601B7A4AE700832F09 /* SortAnagramTests.m */,
+				0668BA5E1B7A4AE700832F09 /* Supporting Files */,
+			);
+			path = SortAnagramTests;
+			sourceTree = "<group>";
+		};
+		0668BA5E1B7A4AE700832F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0668BA5F1B7A4AE700832F09 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +128,24 @@
 			productReference = 06000C101B799824008005CB /* SortAnagrams */;
 			productType = "com.apple.product-type.tool";
 		};
+		0668BA5B1B7A4AE700832F09 /* SortAnagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0668BA641B7A4AE700832F09 /* Build configuration list for PBXNativeTarget "SortAnagramTests" */;
+			buildPhases = (
+				0668BA581B7A4AE700832F09 /* Sources */,
+				0668BA591B7A4AE700832F09 /* Frameworks */,
+				0668BA5A1B7A4AE700832F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0668BA691B7A4D0100832F09 /* PBXTargetDependency */,
+			);
+			name = SortAnagramTests;
+			productName = SortAnagramTests;
+			productReference = 0668BA5C1B7A4AE700832F09 /* SortAnagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +156,9 @@
 				ORGANIZATIONNAME = Dario;
 				TargetAttributes = {
 					06000C0F1B799824008005CB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					0668BA5B1B7A4AE700832F09 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -109,9 +176,20 @@
 			projectRoot = "";
 			targets = (
 				06000C0F1B799824008005CB /* SortAnagrams */,
+				0668BA5B1B7A4AE700832F09 /* SortAnagramTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0668BA5A1B7A4AE700832F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06000C0C1B799824008005CB /* Sources */ = {
@@ -119,10 +197,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				06000C141B799824008005CB /* main.m in Sources */,
+				0668BA671B7A4B1300832F09 /* SortAnagrams.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0668BA581B7A4AE700832F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0668BA6A1B7A4D1400832F09 /* SortAnagrams.m in Sources */,
+				0668BA611B7A4AE700832F09 /* SortAnagramTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0668BA691B7A4D0100832F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06000C0F1B799824008005CB /* SortAnagrams */;
+			targetProxy = 0668BA681B7A4D0100832F09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		06000C151B799824008005CB /* Debug */ = {
@@ -205,6 +301,10 @@
 		06000C181B799824008005CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +312,42 @@
 		06000C191B799824008005CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0668BA621B7A4AE700832F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SortAnagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0668BA631B7A4AE700832F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SortAnagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -233,6 +369,15 @@
 			buildConfigurations = (
 				06000C181B799824008005CB /* Debug */,
 				06000C191B799824008005CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0668BA641B7A4AE700832F09 /* Build configuration list for PBXNativeTarget "SortAnagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0668BA621B7A4AE700832F09 /* Debug */,
+				0668BA631B7A4AE700832F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

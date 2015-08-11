@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SortAnagramTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SortAnagrams.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>06000C0F1B799824008005CB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0668BA5B1B7A4AE700832F09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
