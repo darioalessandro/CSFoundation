@@ -13,7 +13,7 @@
 int main(int argc, const char * argv[]) {
     // merge sorted arrays merge 2 into a
     int a [] = {1,2,13,23,24,24};
-    int b[] = {1,2,4,5,12};
+    int b [] = {1,2,4,5,12};
     unsigned long sizeOfa = sizeof(a)/sizeof(a[0]);
     unsigned long sizeOfb = sizeof(b)/sizeof(b[0]);
     unsigned long sizeOfA = sizeOfa + sizeOfb;
@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
         A[i] = a[i];
     
     long Aptr = sizeOfa - 1;
-    long bptr = sizeOfb -1 ;
+    long bptr = sizeOfb - 1;
     
     for(long i = sizeOfA - 1 ; i>=0l ; i-- )
         if(bptr < 0)
@@ -35,7 +35,7 @@ int main(int argc, const char * argv[]) {
         else
             A[i] = A[Aptr--];
     
-    for(long i = 0 ; i<sizeOfA ; i++)
+    for(long i = 0 ; i < sizeOfA ; i++)
         printf(" %d ", A[i]);
     
     free(A);
