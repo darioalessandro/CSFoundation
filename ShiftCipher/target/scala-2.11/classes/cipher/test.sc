@@ -1,8 +1,8 @@
 import cipher._
 
-val k = 3
+val k = 5
 
-val encrypted = ShiftCipher.encrypt("metallIca $$##234234", k)
+val encrypted = ShiftCipher.encrypt("attack", k)
 
 val decrypted = ShiftCipher.decrypt(encrypted, k)
 

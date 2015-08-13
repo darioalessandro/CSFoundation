@@ -5,8 +5,16 @@ package cipher
  */
 object ShiftCipher {
 
-  def encrypt(plain : String, k : Int) = plain map { c => ( c + k % 26).toChar } mkString
+  def toInt(c : Char) = {
+    c - 'a'
+  }
 
-  def decrypt(encrypted : String, k : Int) = encrypted map { c => ( c - k % 26).toChar } mkString
+  def toChar(int : Int) = {
+    (int + 'a').toChar
+  }
+
+  def encrypt(plain : String, k : Int) = plain.toLowerCase map { c =>  toChar((toInt(c) + k) % 26) } mkString
+
+  def decrypt(encrypted : String, k : Int) = encrypted map { c => toChar((toInt(c) - k) % 26) } mkString
 
 }
