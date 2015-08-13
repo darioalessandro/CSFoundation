@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         SortAnagrams * s = [SortAnagrams new];
-        NSLog(@"sorted %@", [s sort:@[@"bba", @"za", @"bbb", @"aaa", @"aab", @"baa", @"cca", @"acc"]]);
+        NSLog(@"sorted %@", [s sort:@[@"ac",@"bd"]]);
         
     }
     return 0;
