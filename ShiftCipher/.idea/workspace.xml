@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/cipher/ShiftCipher.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,8 +65,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/scala/ShiftCipher.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/test.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/cipher/ShiftCipher.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/cipher/test.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/cipher/ShiftCipher.scala" />
       </list>
     </option>
   </component>
@@ -718,12 +718,12 @@
       <created>1439431434009</created>
       <option name="number" value="Default" />
       <updated>1439431434009</updated>
-      <workItem from="1439431435963" duration="1992000" />
+      <workItem from="1439431435963" duration="2293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1992000" />
+    <option name="totallyTimeSpent" value="2293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -772,7 +772,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/cipher/ShiftCipher.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
