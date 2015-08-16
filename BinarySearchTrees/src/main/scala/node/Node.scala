@@ -41,23 +41,19 @@ class Node( val value : Int , var left : Option[Node], var right: Option[Node], 
   }
 
   def min : Int = {
-    var x : Option[Node] = Some(this)
-    var value = this.value
-    while(x.nonEmpty) {
-      value = x.get.value
-      x = x.get.left
-    }
-    value
+    var ptr : Option[Node] = Some(this)
+    while(ptr.nonEmpty && ptr.get.left.nonEmpty)
+      ptr = ptr.get.left
+
+    ptr.get.value
   }
 
   def max : Int = {
-    var x : Option[Node] = Some(this)
-    var value = this.value
-    while(x.nonEmpty) {
-      value = x.get.value
-      x = x.get.right
-    }
-    value
+    var ptr : Option[Node] = Some(this)
+    while(ptr.nonEmpty && ptr.get.right.nonEmpty)
+      ptr = ptr.get.right
+
+    ptr.get.value
   }
 
   def containsRec(value : Int) : Boolean = {

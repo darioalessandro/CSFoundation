@@ -11,6 +11,8 @@
 		0668BA611B7A4AE700832F09 /* SortAnagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668BA601B7A4AE700832F09 /* SortAnagramTests.m */; };
 		0668BA671B7A4B1300832F09 /* SortAnagrams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668BA661B7A4B1300832F09 /* SortAnagrams.m */; };
 		0668BA6A1B7A4D1400832F09 /* SortAnagrams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668BA661B7A4B1300832F09 /* SortAnagrams.m */; };
+		067015E21B800C0000334AED /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 067015E11B800C0000334AED /* MergeSort.m */; };
+		067015E31B800ED700334AED /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 067015E11B800C0000334AED /* MergeSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		0668BA601B7A4AE700832F09 /* SortAnagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortAnagramTests.m; sourceTree = "<group>"; };
 		0668BA651B7A4B1300832F09 /* SortAnagrams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortAnagrams.h; sourceTree = "<group>"; };
 		0668BA661B7A4B1300832F09 /* SortAnagrams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortAnagrams.m; sourceTree = "<group>"; };
+		067015E01B800C0000334AED /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		067015E11B800C0000334AED /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				06000C131B799824008005CB /* main.m */,
+				067015E01B800C0000334AED /* MergeSort.h */,
+				067015E11B800C0000334AED /* MergeSort.m */,
 				0668BA651B7A4B1300832F09 /* SortAnagrams.h */,
 				0668BA661B7A4B1300832F09 /* SortAnagrams.m */,
 			);
@@ -196,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067015E21B800C0000334AED /* MergeSort.m in Sources */,
 				06000C141B799824008005CB /* main.m in Sources */,
 				0668BA671B7A4B1300832F09 /* SortAnagrams.m in Sources */,
 			);
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067015E31B800ED700334AED /* MergeSort.m in Sources */,
 				0668BA6A1B7A4D1400832F09 /* SortAnagrams.m in Sources */,
 				0668BA611B7A4AE700832F09 /* SortAnagramTests.m in Sources */,
 			);
@@ -380,6 +388,7 @@
 				0668BA631B7A4AE700832F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
