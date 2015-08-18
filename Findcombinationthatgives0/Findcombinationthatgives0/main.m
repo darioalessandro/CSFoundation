@@ -28,21 +28,14 @@ void find0_n_squared(int a[], int b[], int c[], unsigned long size_a, unsigned l
     
     qsort(a, size_a,sizeof(int),compare_function);
     qsort(b, size_b,sizeof(int),compare_function);
-    
-    int twodmatrix [size_a][size_b];
-    
-    for (int i  = 0; i < size_a; i++)
-        for (int j = 0 ; j < size_b ;j++)
-            twodmatrix[i][j] = a[i] + b[j];
-    
-    
+        
     for (int i = 0; i < size_c; i ++) {
         int lookingfor = c[i] * -1;
         int ptri = (int)size_a -1;
         int ptrj = 0;
 
         while (ptri >= 0 && ptrj < size_b) {
-            int val = twodmatrix[ptri][ptrj];
+            int val = a[ptri] + b[ptrj];
             if(lookingfor == val){
                 printf("found a[%d]=%d + b[%d]=%d + c[%d]=%d = 0 \n", ptri, a[ptri], ptrj, b[ptrj], i, c[i]);
                 ptri = -1 ;
