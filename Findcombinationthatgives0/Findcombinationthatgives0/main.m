@@ -25,6 +25,7 @@ int compare_function(const void *a,const void *b) {
 }
 
 void find0_n_squared(int a[], int b[], int c[], unsigned long size_a, unsigned long size_b, unsigned long size_c) {
+    
     qsort(a, size_a,sizeof(int),compare_function);
     qsort(b, size_b,sizeof(int),compare_function);
     
@@ -40,7 +41,7 @@ void find0_n_squared(int a[], int b[], int c[], unsigned long size_a, unsigned l
         int ptri = (int)size_a -1;
         int ptrj = 0;
 
-        while (ptri >= 0 && ptrj <= size_b) {
+        while (ptri >= 0 && ptrj < size_b) {
             int val = twodmatrix[ptri][ptrj];
             if(lookingfor == val){
                 printf("found a[%d]=%d + b[%d]=%d + c[%d]=%d = 0 \n", ptri, a[ptri], ptrj, b[ptrj], i, c[i]);
