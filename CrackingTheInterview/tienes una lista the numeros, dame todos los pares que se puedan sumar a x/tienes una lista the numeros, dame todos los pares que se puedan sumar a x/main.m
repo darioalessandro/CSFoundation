@@ -26,18 +26,18 @@ void printPairsN2(int numbers [], unsigned long length, int k) {
     printf("\n\ntime complexity O((%f)N) = %d where N = %d", (float)count/(float)length, count, (int)length);
 }
 
-void printPairsN(int a [], unsigned long length, int target) {
-    qsort(a, length,sizeof(int),compare_function);
+void printPairsN(int numbers [], unsigned long length, int target) {
+    qsort(numbers, length,sizeof(int),compare_function);
     int i = 0;
     int j = (int)length-1;
     int count = 0;
     while(i < j){
         count++;
-        if (a[i] + a[j] == target) {
-            printf("\nfound a[%d](%d) + a[%d](%d) == %d", i, a[i], j, a[j],target);
+        if (numbers[i] + numbers[j] == target) {
+            printf("\nfound numbers[%d](%d) + numbers[%d](%d) == %d", i, numbers[i], j, numbers[j],target);
             i++; j--;
-        }else if (a[i] + a[j] <  target) i ++;
-        else if (a[i] + a[j] >  target) j --;
+        }else if (numbers[i] + numbers[j] <  target) i ++;
+        else if (numbers[i] + numbers[j] >  target) j --;
     }
     printf("\n\ntime complexity O((%f)N) = %d where N = %d", (float)count/(float)length, count, (int)length);
 }
