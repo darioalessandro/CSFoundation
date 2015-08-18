@@ -40,7 +40,7 @@ void find0_n_squared(int a[], int b[], int c[], unsigned long size_a, unsigned l
                 printf("found a[%d]=%d + b[%d]=%d + c[%d]=%d = 0 \n", ptri, a[ptri], ptrj, b[ptrj], i, c[i]);
                 ptri = -1 ;
                 ptrj = (int)size_b;
-            }else if(lookingfor > val && ptrj < size_b -1)
+            }else if(lookingfor > val)
                 ptrj ++;
             else if(lookingfor < val)
                 ptri --;
