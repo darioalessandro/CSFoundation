@@ -28,7 +28,7 @@ void find0_n_squared(int a[], int b[], int c[], unsigned long size_a, unsigned l
     
     qsort(a, size_a,sizeof(int),compare_function);
     qsort(b, size_b,sizeof(int),compare_function);
-        
+    
     for (int i = 0; i < size_c; i ++) {
         int lookingfor = c[i] * -1;
         int ptri = (int)size_a -1;
@@ -42,12 +42,9 @@ void find0_n_squared(int a[], int b[], int c[], unsigned long size_a, unsigned l
                 ptrj = (int)size_b;
             }else if(lookingfor > val && ptrj < size_b -1)
                 ptrj ++;
-            else if(ptri > 0)
+            else if(lookingfor < val)
                 ptri --;
-            else if( ptri == 0 && ptrj < size_b){
-                ptri = (int) size_a -1;
-                ptrj ++;
-            } else {
+            else {
                 ptri = -1 ;
                 ptrj = (int)size_b;
             }
