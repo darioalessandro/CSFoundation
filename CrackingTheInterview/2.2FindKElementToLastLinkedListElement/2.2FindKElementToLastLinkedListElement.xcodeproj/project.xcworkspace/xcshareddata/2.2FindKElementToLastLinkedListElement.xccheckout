@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D4031B7D-D236-4FF5-A933-4EFD2427282F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>2.2FindKElementToLastLinkedListElement</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>
 		<string>https://github.com/darioalessandro/CSFoundation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CrackingTheInterview/2.2FindKElementToLastLinkedListElement/2.2FindKElementToLastLinkedListElement.xcodeproj/project.xcworkspace</string>
+	<string>CrackingTheInterview/2.2FindKElementToLastLinkedListElement/2.2FindKElementToLastLinkedListElement.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>363DAAE335D5523E2442E8B38EB1CEB553A4A656</key>

@@ -1,0 +1,30 @@
+tienes una lista the numeros, dame todos los pares que se puedan sumar a x
+asi que si X es 10
+y tienes los numeros 2,4,3,6,8
+los pares son (2,8), (4,6)
+en O(n)
+
+int compare_function(const void *a,const void *b) {
+    int *x = (int *) a;
+    int *y = (int *) b;
+    return *x - *y;
+}
+
+void printPairsWichAdd(int numbers [], unsigned long length, int k) {
+    qsort(numbers, length, sizeof(int),compare_function);
+    
+    for(int i = 0; i < length ; i ++) {
+        int ptr = (int)length -1;
+        while(ptr > i){
+            if(numbers[i] + numbers[ptr] == k)
+                printf("found numbers[%d](%d) + numbers[%d](%d) == %d", i, numbers[i], ptr, numbers[ptr],k);
+            ptr --;	
+        }
+    }
+}
+
+main {
+	int numbers [] = {2,4,3,6,8};
+	int numbersLength = sizeof(numbers)/sizeof(int);
+	printPairsWitchAdd(numbers, numbersLength, 10);	
+}
