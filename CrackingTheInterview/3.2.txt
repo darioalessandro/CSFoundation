@@ -1,0 +1,26 @@
+How would you design a stack which, in addition to push and pop, also hasa function min which returns the minimum element? Push, pop and min should all operate in O(1) time.
+
+typedef struct Stack {
+	LinkedList * head;
+	Stack * min;
+} Stack;
+
+void stack_push_2(stack * Stack, void * obj) {
+	if(obj < min -> head -> value)
+		stack_push(stack -> min, obj);
+	stack_push(stack, obj);
+}
+
+void * stack_pop(stack * Stack ) {
+	void * valueToPop = stack -> head.value;
+	if(valueToPop == stack -> min -> head -> value){
+		void * value = stack_pop(stack);
+	}
+	if(head -> next != NULL)
+		stack -> head = head -> next;
+	return valueToPop;
+}
+
+void * min (stack * Stack) {
+	return stack -> min -> head -> value;
+}

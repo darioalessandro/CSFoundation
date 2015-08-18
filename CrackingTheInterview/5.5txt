@@ -1,0 +1,25 @@
+Write a function to determine the number of bits you'll have to flip to go from integer A to B.
+
+example
+
+A 11101 or 29 
+B 01111 or 15
+
+output 2
+
+We can solve this problem using a bit by bit xor between A and B
+
+int a = 0x7;
+
+int b = 0x3;
+
+int xo = a ^ b;
+
+int bitsToFlip = 0;
+while(xo != 0) {
+    if(xo % 2 != 0)
+        bitsToFlip ++;
+    xo >>= 1;
+}
+
+println("number of bits to flip %d", xo);

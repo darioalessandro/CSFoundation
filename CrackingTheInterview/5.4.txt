@@ -1,0 +1,32 @@
+Explain what the following code does  (n & (n - 1)) ==  0 
+
+case 1
+
+n = 0100 <- 4 base 10
+
+n2 = n -1 = 0011
+
+0100
+0011
+-----
+0000
+
+case 2
+
+n = 0111 <- 7 base 10
+
+n2 = n -1 = 0110 
+
+0110
+0111
+-----
+0110
+
+4 is a power of 2 but 7 is not.
+
+so if (n & (n - 1)) ==  0 it means that it is a power of 2 or that n = 0
+
+
+
+
+
