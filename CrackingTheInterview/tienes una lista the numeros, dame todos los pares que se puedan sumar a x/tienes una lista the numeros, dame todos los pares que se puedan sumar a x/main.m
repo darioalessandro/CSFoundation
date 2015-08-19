@@ -26,7 +26,7 @@ void printPairsN2(int numbers [], unsigned long length, int k) {
     printf("\n\ntime complexity O((%f)N) = %d where N = %d", (float)count/(float)length, count, (int)length);
 }
 
-void printPairsN(int numbers [], unsigned long length, int target) {
+void printPairsNLogN(int numbers [], unsigned long length, int target) {
     qsort(numbers, length,sizeof(int),compare_function);
     int i = 0;
     int j = (int)length-1;
@@ -47,7 +47,7 @@ int main(int argc, const char * argv[]) {
         int numbers [] = {2,4,3,6,8,2,4,3,6,8,2,4,3,6,8};
         int numbersLength = sizeof(numbers)/sizeof(int);
         printf("numbersLength %d\n\n", numbersLength);
-        printPairsN(numbers, numbersLength, 10);
+        printPairsNLogN(numbers, numbersLength, 10);
     }
     return 0;
 }
