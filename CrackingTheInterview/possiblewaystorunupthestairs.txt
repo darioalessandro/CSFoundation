@@ -2,11 +2,12 @@
 
 def possibleWaysToRunUpTheStairs(steps : Int) : Int = {
 	def helper(hops : Int) : Int = {
-		if (hops >= steps)
+		if (hops == steps)
 			1
+		else if(hos > steps)
+			0	
 		else
 			helper(hops + 1) + helper(hops + 2) + helper(hops + 3)	
 	}
-
 	helper(0)
 }
